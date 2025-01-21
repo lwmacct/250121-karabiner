@@ -6,8 +6,8 @@
 __main() {
   cd ~/.config/karabiner || return 1
   rm -rf assets
-  git clone https://github.com/lwmacct/250121-karabiner.git
-  mv 250121-karabiner assets
+  git clone https://github.com/lwmacct/250121-karabiner-assets.git
+  mv 250121-karabiner-assets assets
 }
 
 __main
