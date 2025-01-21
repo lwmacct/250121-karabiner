@@ -1,0 +1,38 @@
+{
+  "title": "lwm-caps_lock-按键映射",
+  "rules": [
+    {
+      "description": "lwm-caps_lock-magnet",
+      "manipulators": [
+        {
+          "description": "cl+m",
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "left_control",
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "lwm_caps_lock_mode",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
